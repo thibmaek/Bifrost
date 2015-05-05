@@ -13,4 +13,6 @@ Colors are provided as rgba format to make every value easily adjustable.
 bower install bifrost-color
 ```
 
+[See an example of bifrost here](http://codepen.io/thibmaek/pen/WvQoLg)
+
 ![Preview](http://imgur.com/hAoRiO2.png)
