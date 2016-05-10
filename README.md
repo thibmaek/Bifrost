@@ -1,6 +1,6 @@
 # Bifrost
 
-[![Bower](https://img.shields.io/bower/v/bifrost-color.svg)](https://github.com/thibmaek/Bifrost) <img src="http://benschwarz.github.io/bower-badges/badge@2x.png" width="130" height="30">
+[![Bower](https://img.shields.io/bower/v/bifrost-color.svg)](https://github.com/thibmaek/Bifrost)
 
 Bifrost is an easy to use and highly configurable color palette for your Sass projects.  
 
@@ -10,10 +10,27 @@ Colors are provided as rgba format to make every value easily adjustable.
 
 <br>
 
-**Install by cloning this repo or by pulling it from bower:**
+## Usage
 
-``` shell
-bower install bifrost-color
+Install it from npm (preferred) or bower:
+
+```shell
+npm install -D bifrost-color
+bower install --save-dev bifrost-color
+```
+
+Use it in your Sass files by calling the function and passing the correct
+parameters:
+
+```scss
+/**
+ * @param {string} color-group
+ * @param {string} named-color
+ */
+
+ul li {
+  color: bifrost(whites, narvik);
+}
 ```
 
 [See an example of bifrost here](http://codepen.io/thibmaek/pen/WvQoLg)
