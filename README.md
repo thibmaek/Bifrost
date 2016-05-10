@@ -1,6 +1,7 @@
 # Bifrost
 
-[![Bower](https://img.shields.io/bower/v/bifrost-color.svg)](https://github.com/thibmaek/Bifrost)
+[![Bower](https://img.shields.io/bower/v/bifrost-color.svg)](https://github.com/thibmaek/Bifrost) 
+[![npm](https://img.shields.io/npm/v/bifrost-color.svg?maxAge=2592000)]()
 
 Bifrost is an easy to use and highly configurable color palette for your Sass projects.  
 
