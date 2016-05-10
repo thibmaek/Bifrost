@@ -1,6 +1,6 @@
 {
   "name": "bifrost-color",
-  "version": "2.4.0",
+  "version": "3.0.0",
   "description": "An easy to use beautiful color palette written in SCSS",
   "main": "_bifrost.scss",
   "scripts": {
