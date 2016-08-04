@@ -7,3 +7,6 @@
 
 ## 3.0.0
 - Published to npm (prefered method of usage for this utility)
+
+## 4.0.0
+- Included unit testing for sass with sass-true
