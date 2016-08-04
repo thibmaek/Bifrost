@@ -1,0 +1,43 @@
+@import 'true';
+
+// Globals
+$bifrost: (
+  blacks: (oil: rgba(51, 51, 51, 1)),
+  reds: (sipRed: rgba(236, 35, 66, 1)),
+  i: (j: 30 / .3%)
+);
+
+@function bifrost($base-color, $tone: '') {
+  @return map-get(map-get($bifrost, $base-color), $tone);
+}
+
+
+// Module - assert:true
+@include test-module('For correct values it,') {
+  @include test('returns a specified color') {
+    $test: bifrost(blacks, oil);
+    $expect: rgba(51, 51, 51, 1);
+    @include assert-equal($test, $expect, 'returns a specified color');
+  }
+};
+
+// Module - assert:false
+@include test-module('For incorrect values it,') {
+  @include test('fails when $base-color is incorrect') {
+    $test: bifrost(reds, oil);
+    $expect: rgba(51, 51, 51, 1);
+    @include assert-unequal($test, $expect, 'fails when $base-color is incorrect');
+  }
+
+  @include test('fails when no $tone is passed') {
+    $test: bifrost(blacks);
+    $expect: rgba(51, 51, 51, 1);
+    @include assert-unequal($test, $expect, 'fails when no $tone is passed');
+  }
+
+  @include test('fails when non-color values are passed as parameters') {
+    $test: bifrost(i, oil);
+    $expect: rgba(51, 51, 51, 1);
+    @include assert-unequal($test, $expect, 'fails when non-color values are passed as parameters');
+  }
+};
